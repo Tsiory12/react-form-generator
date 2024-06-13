@@ -2,28 +2,17 @@
 
 ## Installation
 
-1. **Cloner le dépôt :**
+1. **Créer le fichier .npmrc dans le dossier root de votre projet:**
+  - N'oubliez pas de remplacer YOUR_USERNAME et YOUR_TOKEN par votre username et votre token
     ```sh
-    git clone https://gitlab.arkeup.com/arkeup/projets/BOSS/poc/react-form-generator.git
-    cd <votre-repertoire-depot>
+    @YOUR_USERNAME:registry=https://npm.pkg.github.com/
+    //npm.pkg.github.com/:_authToken=YOUR_TOKEN
     ```
 
-2. **Lier le package :**
+2. **Lancer la commande suivante:**
     ```sh
-    npm link
+    npm i @YOUR_USERNAME/PACKAGENAME
     ```
-
-3. **Ajouter le package à votre projet React :**
-
-    - Dans le `package.json` de votre projet React, ajoutez la dépendance suivante :
-        ```json
-        "reat-form-generator": "^0.0.0"
-        ```
-
-    - Exécutez la commande suivante dans le répertoire de votre projet React :
-        ```sh
-        npm link reat-form-generator
-        ```
 
 ## Utilisation
 
@@ -35,6 +24,7 @@ Pour générer un formulaire, créez un fichier JSON au format suivant et utilis
   "description": "Veuillez remplir ce formulaire pour créer votre compte.",
   "submitButton": "S'inscrire",
   "resetButton": "Réinitialiser",
+  "undoButton": "Retour",
   "class": "",
   "fields": [
     {
@@ -59,6 +49,7 @@ Pour générer un formulaire, créez un fichier JSON au format suivant et utilis
 - **description** : Une brève description ou des instructions pour remplir le formulaire.
 - **submitButton** : Texte du bouton de soumission du formulaire.
 - **resetButton** : Texte du bouton de réinitialisation du formulaire.
+- **undoButton**: Texte du bouton pour annuler la dernière modification du formulaire,
 - **class** : Classes CSS supplémentaires pour le formulaire.
 - **fields** : Un tableau d'objets représentant les champs du formulaire. Chaque objet champ définit un champ de formulaire et comprend les propriétés suivantes :
 
