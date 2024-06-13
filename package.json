@@ -1,8 +1,11 @@
 {
-  "name": "react-form-generator",
+  "name": "@Tsiory12/react-form-generator",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@Tsiory12"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -34,5 +37,13 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "1. **Cloner le dépôt :**\r     ```sh\r     git clone https://gitlab.arkeup.com/arkeup/projets/BOSS/poc/react-form-generator.git\r     cd <votre-repertoire-depot>\r     ```",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
